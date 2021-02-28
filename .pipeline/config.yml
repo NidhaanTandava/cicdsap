@@ -13,7 +13,7 @@
 ### General project setup
 general:
   inferBuildTool: true
-  productiveBranch: master
+  productiveBranch: 'master'
 
 ### Step-specific configuration
 steps:
@@ -33,10 +33,13 @@ stages:
   'Confirm':
     manualConfirmation: false
   productionDeployment:
-    tmsUpload:
-      nodeName: 'Dev_Node_WoC'
+    verbose: true
+    cfTargets:
+    - org: 'Boehringer_Ingelheim_GmbH_wocsolutiondev'
+      space: 'wocsolutiondev'
+      appName: 'BIFlexDesk'
+      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
       credentialsId: 'atiegoba-tonye-cf-basic'
-      customDescription: 'Dev Node in Transport'
 
 #  Integration:
 #    credentials:
