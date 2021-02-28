@@ -1,0 +1,25 @@
+{
+  "name": "html5module",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@sap/ui5-builder-webide-extension": "1.0.x",
+    "@sapui5/ts-types": "1.71.x",
+    "@ui5/cli": "2.2.6",
+    "bestzip": "^2.1.7",
+    "rimraf": "3.0.2",
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "@sap/approuter": "8.2.1",
+    "escodegen": "^2.0.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ui5-builder-webide-extension"
+    ]
+  }
+}

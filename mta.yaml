@@ -1,0 +1,15 @@
+_schema-version: "3.1"
+ID: cicdsample
+description: A simple CAP project.
+version: 1.0.2
+modules:
+
+- name: cicdsample-app
+  # ------------------------------------------------------------
+  type: nodejs
+  path: gen/app
+  parameters:
+    memory: 256M
+    env:
+      SESSION_TIMEOUT: 5
+  
