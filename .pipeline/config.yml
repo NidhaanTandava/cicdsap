@@ -13,6 +13,7 @@
 ### General project setup
 general:
   inferBuildTool: true
+  productiveBranch: master
 
 ### Step-specific configuration
 steps:
@@ -22,10 +23,20 @@ steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
 
+  tmsUpload:
+    nodeName: 'Dev_Node_WoC'
+    credentialsId: 'atiegoba-tonye-cf-basic'
+    customDescription: 'Dev Node in Transport'
+
 ### Stage-specific configuration
 stages:
   'Confirm':
     manualConfirmation: false
+  productionDeployment:
+    tmsUpload:
+      nodeName: 'Dev_Node_WoC'
+      credentialsId: 'atiegoba-tonye-cf-basic'
+      customDescription: 'Dev Node in Transport'
 
 #  Integration:
 #    credentials:
