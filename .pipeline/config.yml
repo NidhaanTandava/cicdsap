@@ -38,7 +38,7 @@ stages:
     cfTargets:
     - org: 'Boehringer_Ingelheim_GmbH_wocsolutiondev'
       space: 'wocsolutiondev'
-      appName: 'BIFlexDesk'
+      appName: 'cicdsample'
       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
       credentialsId: 'atiegoba-tonye-cf-basic'
 

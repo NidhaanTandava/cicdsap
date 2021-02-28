@@ -2,6 +2,16 @@ _schema-version: "3.1"
 ID: cicdsample
 description: A simple CAP project.
 version: 1.0.3
+parameters:
+  enable-parallel-deployments: true
+   
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install --production
+      - npx -p @sap/cds-dk cds build --production
+
 modules:
 
 - name: cicdsample-app
