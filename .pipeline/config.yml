@@ -26,7 +26,7 @@ steps:
 
   tmsUpload:
     nodeName: 'Dev_Node_WoC'
-    credentialsId: 'atiegoba-tonye-cf-basic'
+    credentialsId: 'tmskey'
     customDescription: 'Test App'
 
 ### Stage-specific configuration
