@@ -3,7 +3,14 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content></content>
+					<content>
+                        <VBox alignContent="Center" justifyContent="Begin" alignItems="Center">
+                            <Title level="h2" class="sapUiMediumMarginBeginEnd sapUiMediumMarginTop" text="CI CD Process" />
+                            <Image class="sapUiMediumMargin" src="./images/cicd_process.png" />
+                            <Title level="h2" class="sapUiMediumMarginBeginEnd sapUiMediumMarginTop" text="Typical Use Case" />
+                            <Image class="sapUiMediumMargin" src="./images/typical_usecase.png" />
+                        </VBox>
+                    </content>
 				</Page>
 			</pages>
 		</App>
